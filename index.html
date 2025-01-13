@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Recruit CRM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2>What our customers say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"I love how organized the system is and how little time it takes to get what we need at a moment’s notice. One-click and you have everything you need!"</p>
+                    <p class="author">April Berube</p>
+                    <p class="designation">Owner/Founder, The Wellington Agency</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The system is so easy to use, and the pipeline feature is a game changer. It takes seconds to know what is happening on each job."</p>
+                    <p class="author">John Doe</p>
+                    <p class="designation">Recruiter, ABC Inc.</p>
+                </div>
+            </div>
+            <div class="indicator-container">
+                <div class="indicator active" onclick="setSlide(0)"></div>
+                <div class="indicator" onclick="setSlide(1)"></div>
+            </div>
+            <p class="fixed-text">We are the highest-rated ATS + CRM in the market, trusted by recruiters in 100+ countries!</p>
+        </div>
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>Log In to your account</h2>
+            <p>To continue where you left off, please enter your details below.</p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Your Password" required>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-button">Log In</button>
+            </form>
+            <div class="signup-link">
+                <p>New to Recruit CRM? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
